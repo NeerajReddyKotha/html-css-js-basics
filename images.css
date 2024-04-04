@@ -1,0 +1,19 @@
+#id1:hover{
+    border: 5px solid green;
+    border-radius: 100%;
+}
+
+#id2:hover{
+    width: 250px;
+    height: 250px;
+    border: 5px solid yellowgreen;
+}
+
+#id3:hover{
+    display: none;
+}
+
+img{
+    border: 5px solid red;
+    margin: 50px;
+}

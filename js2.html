@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Variables</title>
+    </head>
+    <body>
+        <script>
+            /*
+                string
+                ******
+                collection of characters called as string
+                we can declare string in 3 ways
+                1) "" (double quotes)
+                2) '' (single quotes)
+                3) `` (backtick)
+                `` (backtick) introduced in ES6 version
+                `` (backtick) technically called as template literal
+                `` (backtick) used to declare paragraphs (multiline string)        
+            */
+            var sub=`ReactJS`;
+            var msg=`Welcome to ${sub}`;
+            document.write(msg , "<br>");
+                    //Welcome to ReactJS
+
+            var subject=`Java FullStack`;
+            var institute=`Sathya`;
+            var wish=`Learn ${subject} from ${institute} Technologies`;
+            document.write(wish,"<br>");
+                //Learn Java FullStack from Sathya Technologies
+
+        /*
+            number
+            five types of numbers are possible
+            1) decimal
+            2) double
+            3) hexadecimal
+            4) octal
+            5) binary
+            hexadecimal will prefix with 0x
+            octal will prefix with 0o
+            binary will prefix with 0b
+        */
+        var decimal=100;
+        var double=100.12345;
+        var hexadecimal=0x123ABC;
+        var octal=0o123;
+        var binary=0b1010;
+        document.write(decimal,"<br>",
+                       double,"<br>",
+                       hexadecimal,"<br>",
+                       octal,"<br>",
+                       binary,"<br>");
+        /*
+            boolean
+            1) true
+            2) false
+        */
+       var flag=true;
+       var flag1=false;
+       document.write(flag,"<br>",flag1,"<br>");
+
+      /*
+            undefined
+      */
+     var x;
+     document.write(x, "<br>");
+
+    /*
+        null
+        
+        null is datatype in javascript
+        
+        null datatype makes the unused variable
+        availability to garbage collector
+    */
+    x=null;
+    document.write(x,"<br>");
+
+    /*
+        bigint
+        ******
+        it is used to store the large number
+        this datatype introduced in ES6 version
+        range of bigint is 2^53-1 to -2^53-1
+        in bigint number suffix with "n"
+    */
+    var large=123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789n;
+    document.write(large,"<br>");
+
+
+    /*  
+        symbol
+        this datatype used to represent the
+        data uniquily
+
+        this datatype released in ES9 version
+    */
+    var r101=Symbol(100);
+    var r102=Symbol(100);
+    console.log(r101);
+    console.log(r102);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+    </body>
+</html>
+
+
+

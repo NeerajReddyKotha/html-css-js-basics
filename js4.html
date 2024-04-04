@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Variables</title>
+    </head>
+    <body>
+        <!-- <script>
+            let x=100;
+            let x=200;
+            document.write(x);
+            //var : 200
+            //let : Uncaught SyntaxError: Identifier 'x' has already been declared
+        </script> -->
+
+
+
+
+
+        <!-- <script>
+            document.write(x);
+            let x=100;
+            //var:undefined
+            //let:Uncaught ReferenceError: Cannot access 'x' before initialization
+        </script> -->
+
+
+
+
+        <!-- <script>
+            let x=100;
+            {
+                let x=200;
+            }
+            document.write(x);
+            //var:200
+            //let:100
+        </script> -->
+
+
+        <!-- <script>
+            function func_one(){
+                {
+                    var x=100;
+                    let y=200;
+                }
+                document.write(x);      //100
+                document.write(y);      //Uncaught ReferenceError: y is not defined
+            }
+            func_one();
+        </script> -->
+
+
+
+
+    <!-- <script>
+        const x=100;
+        x=200;
+            //Uncaught TypeError: Assignment to constant variable.
+    </script> -->
+
+
+
+
+<!-- <script>
+    const arr=[10,20,30,40,50];
+    //arr=[];
+    //Uncaught TypeError: Assignment to constant variable.
+
+    //arr=[100,200,300,400,500];
+    //Uncaught TypeError: Assignment to constant variable.
+
+    arr[0]=100;
+    arr[1]=200;
+    arr[4]=500;
+    arr[5]=600;
+    arr.forEach(function(element,index){
+        document.write(element,"<br>");
+    });
+</script> -->
+
+
+
+<script>
+    const obj={
+        key1:"Angular15",
+        key2:"NodeJS",
+        key3:"Oracle"
+    };
+    //obj={};
+        //Uncaught TypeError: Assignment to constant variable.
+    
+    // obj={
+    //     key1:"ReactJS",
+    //     key2:"Spring Boot",
+    //     key3:"MongoDB"
+    // };
+    //Uncaught TypeError: Assignment to constant variable.
+
+    obj.key1="ReactJS";
+    obj.key2="Spring Boot";
+    obj.key3="MongoDB";
+    obj.key4="Java FullStack";
+    document.write(obj.key1, obj.key2, obj.key3, obj.key4);
+    //ReactJS Spring Boot MongoDB Java FullStack
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

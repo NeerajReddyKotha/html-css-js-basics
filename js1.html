@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Basics</title>
+    </head>
+    <body>
+       <script>
+           console.log("welcome to javascript","<br>");
+                        //welcome to javascript
+
+          document.write(10+10,"<br>"); 
+                                //20
+          document.write(10+"10","<br>");
+                                //1010
+
+          document.write(10+ +"10");
+                                //20
+
+          document.write(+"10"+ +"10");
+                                //20
+          document.write( 10 - "10" );
+                                    //0
+          document.write(10*"10");
+                                //100
+          document.write(10/"10");
+                                //1
+          document.write(10/"0");
+                                //Infinity                      
+          document.write(10/"A");
+                                //NaN
+                                //Not an Number
+          //true --- 1
+          //false --- 0
+          document.write(true+true);      //2
+          document.write(true+false);     //1
+          document.write(1+true);         //2
+          document.write(true+false+true+false);    //2
+          document.write(true/false);    //Infinity
+          document.write(1+"true");  //1true
+
+        document.write(9>8>7);  //false
+        document.write(1<2<3);  //true
+
+        //& -- if both are true then result is true
+        document.write(1&1);  //1
+        document.write(1&0);  //0
+        document.write(0&1);  //0
+        document.write(0&0);  //0
+
+        // | - if atleast one is true then result is true
+        document.write(1|1);  
+        document.write(1|0);  
+        document.write(0|1);  
+        document.write(0|0);  
+
+        // ^(XoR) if both are opposite then result is true
+        document.write(1^1);  
+        document.write(1^0);  
+        document.write(0^1);  
+        document.write(0^0);
+
+
+        //BODMAS
+        //B - Bracket
+        //O - of
+        //D - Division
+        //M - Multiplication
+        //A - Addition
+        //S - Subtraction
+        document.write(10+5/10-5);      //5.5
+        document.write((10+5)/(10-5));  //3
+
+
+        //ternary operator
+        //condition ? true block : false block;
+        true ? document.write("Hello"):document.write("Welcome");
+                            //Hello
+        false ? document.write("Hello"):document.write("Welcome");
+                            //Welcome
+        9>8>7 ? document.write("Hello"):document.write("Welcome");
+                            //Welcome
+        1<2<3 ? document.write("Hello"):document.write("Welcome");
+                            //Hello
+
+        // = (Assignment)
+        // == (comparision)
+        // === (strict comparision)
+        // == it will compare left value with right value
+        //===  it will compare left value with datatype to right value with datatype
+        document.write(10=="10");   //true
+        document.write(10=="ten");  //false
+        document.write(10==="10");  //false
+
+
+        document.write(0.1+0.2 == 0.3 );    //false
+        document.write(0.1+0.2 === 0.3 );   //false
+        document.write(0.1+0.2);
+                            //0.30000000000000004
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+       
+       
+       
+       </script> 
+    </body>
+</html>

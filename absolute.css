@@ -1,0 +1,42 @@
+body{
+   margin: 0;
+   padding: 0;
+}
+div{
+    width: 100px;
+    height: 100px;
+    color: white;
+    font-weight: bold;   
+}
+#id1{
+    background-color: red;
+    position: absolute;
+    z-index: 1000;
+    left: 80px;
+    top: 80px;
+}
+#id2{
+    background-color: green;
+    position: absolute;
+    z-index: 900;
+    left: 60px;
+    top: 60px;
+}
+#id3{
+    background-color: blue;
+    position: absolute;
+    z-index: 800;
+    left: 40px;
+    top: 40px;
+}
+#id4{
+    background-color: brown;
+    position: absolute;
+    z-index: 700;
+    left: 20px;
+    top: 20px;
+}
+#id5{
+    background-color: purple;
+    position: absolute;
+}

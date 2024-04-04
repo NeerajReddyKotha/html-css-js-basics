@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+        <link rel="stylesheet" href="forms1.css">
+    </head>
+    <body>
+        <fieldset>
+            <legend>REGISTRATION FORM</legend>
+            <form name="regForm">
+                <table>
+                    <!--FIRST NAME-->
+                    <tr>
+                        <td>
+                            First Name
+                        </td>
+                        <td>
+                            <input type="text" name="fname" placeholder="Enter First Name">
+                        </td>
+                        <td>
+                            <span>(***please enter first name***)</span>
+                        </td>
+                    </tr>
+
+
+                    <!--LAST NAME-->
+                    <tr>
+                        <td>
+                            Last Name
+                        </td>
+                        <td>
+                            <input type="text" name="lname" placeholder="Enter Last Name">
+                        </td>
+                        <td>
+                            <span>(***please enter last name***)</span>
+                        </td>
+                    </tr>
+
+
+                    <!--PASSWORD-->
+                    <tr>
+                        <td>
+                            Password
+                        </td>
+                        <td>
+                            <input type="password" name="upwd" placeholder="Enter Password">
+                        </td>
+                        <td>
+                            <span>(***please enter password***)</span>
+                        </td>
+                    </tr>
+
+                    <!--CONF PASSWORD-->
+                    <tr>
+                        <td>
+                            Conf Password
+                        </td>
+                        <td>
+                            <input type="password" name="cupwd" placeholder="Repeat Same Password">
+                        </td>
+                        <td>
+                            <span>(***please enter conf password***)</span>
+                        </td>
+                    </tr>
+
+
+                     <!--EMAIL-->
+                     <tr>
+                        <td>
+                            Email
+                        </td>
+                        <td>
+                            <input type="email" name="email" placeholder="Enter Email">
+                        </td>
+                        <td>
+                            <span>(***please enter email***)</span>
+                        </td>
+                    </tr>
+
+                    <!--AGE-->
+                    <tr>
+                        <td>
+                            Age
+                        </td>
+                        <td>
+                            <input type="number" name="age" placeholder="Enter Age">
+                        </td>
+                        <td>
+                            <span>(***please enter age***)</span>
+                        </td>
+                    </tr>
+
+
+                    <!-- GENDER -->
+                    <tr>
+                        <td>
+                            Gender
+                        </td>
+                        <td>
+                            <input type="radio" name="gender" value="male">Male
+                            <input type="radio" name="gender" value="female">Female
+                        </td>
+                        <td>
+                            <span>(***select gender***)</span>
+                        </td>
+                    </tr>
+
+
+                    <!-- SKILLS-->
+                    <tr>
+                        <td>
+                            Skills
+                        </td>
+                        <td>
+                            <input type="checkbox" name="skills" value="C">C Lang
+                            <input type="checkbox" name="skills" value="cpp">C++
+                        </td>
+                        <td>
+                            <span>(***please select skills***)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="checkbox" name="skills" value="java">Java Lang
+                            <input type="checkbox" name="skills" value=".net">Dot Net
+                        </td>
+                        <td></td>
+                    </tr>
+
+                    <!--COUNTRY-->
+                    <tr>
+                        <td>
+                            Country
+                        </td>
+                        <td>
+                            <select name="country">
+                                <option value="">select country</option>
+                                <option value="ind">India</option>
+                                <option value="usa">America</option>
+                                <option value="uk">London</option>
+                            </select>
+                        </td>
+                        <td>
+                            <span>(***select country***)</span>
+                        </td>
+                    </tr>
+
+                    <!-- Date of Birth -->
+                    <tr>
+                        <td>
+                            Date of Birth
+                        </td>
+                        <td>
+                            <input type="date" name="udob">
+                        </td>
+                        <td>
+                            <span>(***enter correct data of birth***)</span>
+                        </td>
+                    </tr>
+
+                    <!-- Time -->
+                    <tr>
+                        <td>
+                            Pref Time
+                        </td>
+                        <td>
+                            <input type="time" name="ptime">
+                        </td>
+                        <td>
+                            <span>(***pref time***)</span>
+                        </td>
+                    </tr>
+
+                    <!-- color -->
+                    <tr>
+                       <td>
+                            Choose Color
+                       </td>
+                       <td>
+                            <input type="color" name="pcolor">
+                       </td>
+                       <td>
+                            <span>(*** choose color ***)</span>
+                       </td> 
+                    </tr>
+
+                    <!-- Address -->
+                    <tr>
+                        <td>
+                            Address
+                        </td>
+                        <td>
+                            <textarea name="address"></textarea>
+                        </td>
+                        <td>
+                            <span>(***please enter address***)</span>
+                        </td>
+                    </tr>
+
+                    <!-- File -->
+                    <tr>
+                        <td>
+                            Upload Resume
+                        </td>
+                        <td>
+                            <input type="file" name="resume">
+                        </td>
+                        <td>
+                            <span>(***only pdf file***)</span>
+                        </td>
+                    </tr>
+
+
+                    <!-- Submit & Reset -->
+                    <tr>
+                        <td>
+                            <input type="submit" value="Register">
+                        </td>
+                        <td>
+                            <input type="reset" value="Clear">
+                        </td>
+                    </tr>
+              </table>
+            </form>
+        </fieldset>        
+    </body>
+</html>

@@ -1,0 +1,15 @@
+ul,ol{
+    background: linear-gradient(45deg,salmon,red);
+    color: white;
+    width: 15%;
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid green;   
+}
+li{
+    background-color: green;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+}

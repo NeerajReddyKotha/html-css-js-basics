@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Validations</title>
+        <link rel="stylesheet" href="validation.css">
+        <script src="validation.js"></script>
+    </head>
+    <body>
+        <fieldset>
+            <legend>REGISTRATION FORM</legend>
+            <form name="regForm" onsubmit="return register()">
+                <table>
+                    <tr>
+                        <td>
+                            First Name
+                        </td>
+                        <td>
+                            <input type="text" name="fname" 
+                                   placeholder="Enter First Name">
+                        </td>
+                        <td>
+                            <span id="fname_errors"></span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Last Name
+                        </td>
+                        <td>
+                            <input type="text" name="lname" 
+                                   placeholder="Enter Last Name">
+                        </td>
+                        <td>
+                            <span id="lname_errors"></span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Password
+                        </td>
+                        <td>
+                            <input type="password" name="upwd" 
+                                   placeholder="Enter Password">
+                        </td>
+                        <td>
+                            <span id="upwd_errors"></span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Gender
+                        </td>
+                        <td>
+                            <input type="radio" name="gender" value="male">Male
+                            <input type="radio" name="gender" value="female">Female
+                        </td>
+                        <td>
+                            <span id="gender_errors"></span>
+                        </td>
+                    </tr>
+
+
+
+
+
+
+                    <tr>
+                        <td>
+                            <input type="submit" value="Register">
+                        </td>
+                        <td></td>
+                    </tr>
+
+
+
+                </table>
+            </form>
+        </fieldset>
+    </body>
+</html>
+
+
+
+
+
+
+
+

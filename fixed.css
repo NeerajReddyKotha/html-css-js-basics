@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header,footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+}
+header{
+    width: 100%;
+    top: 0px;
+}
+footer{
+    width: 100%;
+    bottom: 0px;
+}
+main{
+    padding: 20px;
+    text-align: justify;
+    font-family: Comic Sans MS;
+}
+h1{
+    color: red;
+    position: sticky;
+    top: 45px;
+}
+
+

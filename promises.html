@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Promises</title>
+    </head>
+    <body>
+        <script>
+            let add=(num)=>{
+                return new Promise((resolve,reject)=>{
+                    resolve(num+5);
+                });
+            };
+            let sub=(num)=>{
+                return new Promise((resolve,reject)=>{
+                    resolve(num-3);
+                });
+            };
+            let mul=(num)=>{
+                return new Promise((resolve,reject)=>{
+                    resolve(num*2);
+                });
+            };
+            let div=(num)=>{
+                return new Promise((resolve,reject)=>{
+                    resolve(num/2-2);
+                });
+            };
+            (async ()=>{
+                let addRes=await add(5);
+                let subRes=await sub(addRes);
+                let mulRes=await mul(subRes);
+                let divRes=await div(mulRes);
+                document.write("AddRes...",addRes,"<br>","SubRes...",subRes,"<br>","MulRes...",mulRes,"<br>","DivRes...",divRes);
+            })();     
+        </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Functions</title>
+    </head>
+    <body>
+
+      
+
+       <script>
+          let obj={
+               key1:"",
+               key2:"",
+               key3:function(){
+                  let inner_func=()=>{
+                    this.key1="Angular15";
+                    this.key2="ReactJS";
+                  }
+                  inner_func();
+               }
+          };
+          obj.key3();
+          document.write(obj.key1, obj.key2);
+       </script>       
+    </body>
+</html>
+
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            calci
+        </title>
+        <body>
+            <fieldset>
+                <legend>
+                    calculations
+                </legend>
+                <input type="number" id="num1" placeholder="enter a number">
+                <br><br>
+                <button onclick="square()" >square</button>
+                <button onclick="cube()" >cube</button>
+                <h1 id="res"></h1>
+            </fieldset>
+            <script>
+                let square=()=>{
+                    let x = parseInt(document.getElementById("num1").value);
+                    document.getElementById("res").innerHTML=x*x;
+                }
+                let cube=()=>{
+                    let x = parseInt(document.getElementById("num1").value);
+                    document.getElementById("res").innerHTML=x*x*x;
+                }
+            </script>
+        </body>
+    </head>
+</html>

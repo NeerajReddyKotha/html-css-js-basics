@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Variables</title>
+    </head>
+    <body>
+        <script>
+            /*
+                array
+                collection of indexed elements called as array
+
+                index starts from 0
+
+                we will represent array with []
+            */
+           var arr1=[10,20,30,40,50];
+           arr1.forEach(function(element,index){
+                document.write(index,"<br>");
+           });
+
+           var arr2=[`Angular15`,`ReactJS`,`NodeJS`,`VueJS`,`MongoDB`];
+           arr2.forEach(function(element,index){
+            document.write(element,"<br>");
+           });
+
+        //for....of
+        //this loop also introduced in ES6 version
+        var arr3=[100,200,300,400,500];
+        for(var x of arr3){
+            document.write(x,"<br>");
+        }
+
+        var arr4=[`Java`,`DotNet`,`Python`,`UI`,`DevOps`];
+        for(var x of arr4){
+            console.log(x,"<br>");
+        }
+
+    /*  
+        JSON
+        JSON Stands for Java Script Object Notation
+        JSON also called as JavaScript Objects
+        JSON used to transfer data over the network
+        JSON is light weight
+        1) Objects ---- {}
+        2) Arrays  ---- []
+        3) data    ---- key & value pairs
+        key & value separated by using ":" colon
+    */
+    var obj1={
+        key1:`ReactJS`,
+        key2:`NodeJS`,
+        key3:`MongoDB`
+    };
+    document.write(obj1.key1, obj1.key2, obj1.key3, "<br>");
+
+    var obj2={
+        sub_one:`Java`,
+        sub_two:`DotNet`,
+        sub_three:`Python`
+    };
+    document.write(obj2.sub_one,obj2.sub_two,obj2.sub_three ,"<br>");
+
+    var obj3={
+        key1:{
+            msg:`welcome to java fullstack`
+        }
+    }; 
+    document.write(obj3.key1.msg, "<br>");
+
+    var obj4={
+        key1:{
+            key2:{
+                msg:`Welcome to DotNet Fullstack`
+            }
+        }
+    };
+
+
+    var products=[{p_id:111,p_name:`p_one`,p_cost:10000},
+                  {p_id:222,p_name:`p_two`,p_cost:20000},
+                  {p_id:333,p_name:`p_three`,p_cost:30000},
+                  {p_id:444,p_name:`p_four`,p_cost:40000},
+                  {p_id:555,p_name:`p_five`,p_cost:50000}];
+    document.write(`<table border="1"
+                           align="center"
+                           cellspacing="10px"
+                           cellpadding="10px">
+                        <tr>
+                            <th>p_id</th>
+                            <th>p_name</th>
+                            <th>p_cost</th>
+                        </tr>
+                        `);
+    products.forEach(function(element,index){
+        document.write(`<tr>
+                <td>${element.p_id}</td>
+                <td>${element.p_name}</td>
+                <td>${element.p_cost}</td>
+            </tr>`);
+    });
+    document.write(`</table>`);
+
+
+    var employees=[{e_id:111,e_name:`e_one`,e_sal:10000,e_dept:`CSE`},
+                {e_id:222,e_name:`e_two`,e_sal:20000,e_dept:`IT`},
+                {e_id:333,e_name:`e_three`,e_sal:30000,e_dept:`CSIT`},
+                {e_id:444,e_name:`e_four`,e_sal:40000,e_dept:`Mech`},
+            {e_id:555,e_name:`e_five`,e_sal:50000,e_dept:`Civil`}];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+    </body>
+</html>
+
+
+

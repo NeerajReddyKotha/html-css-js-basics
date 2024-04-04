@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="regform">
+        <fieldset>
+            <legend>regform</legend>
+            <table>
+                <tr>
+                    <th>username : </th>
+                    <th><input type="text" name="username" placeholder=" enter your username"></th>               
+                   <th> <span>write your username</span> </th>
+                </tr>
+                <tr>
+                    <th>password : </th>
+                    <th><input type="password" name="userpassword" placeholder="enter your password"></th>
+                    <br>
+                    <th><span>password should contain caps,num,symbols</span></th>
+                </tr>
+                <tr>
+                    <th> confirm password : </th>
+                    <th><input type="password" name="confirm Password" placeholder="enter your  confirm password"></th>
+                    <br>
+                    <th><span>enter your confirm password</span></th>
+                </tr>
+                <tr>
+                    <th>email :
+                    </th>
+                    <th><input type="email" name="email" placeholder="enter your email"></th>
+                    <br>
+                    <th><span>enter your email</span></th>
+                </tr>
+            <tr>
+                <th>mobilenuumber</th>
+                <th><input type="number" name="mobilenuumber" placeholder="enter your mobilenuumber"></th>
+                <br>
+                <th><span>enter your mobilenuumber</span></th>
+            </tr>
+            <tr>
+                <th>gender</th>
+                <th><input type="radio" name="gender" >Male
+                <input type="radio" name="gender" >female</th>
+                <th>select your gender
+                </th>
+            </tr>
+            <tr>
+                <th>address</th>
+                <th><textarea name="address"  cols="30" rows="5"></textarea></th>
+                <th>enter your address</th>
+            </tr>
+            <tr>
+                <th> course </th>
+                <th><input type="checkbox" name="java">java
+                    <input type="checkbox" name="java">phyton
+                    <input type="checkbox" name="java">html
+                </th>
+        </tr>
+        <tr>
+            <td>
+                Country
+            </td>
+            <td>
+                <select name="country">
+                    <option value="">select country</option>
+                    <option value="ind">India</option>
+                    <option value="usa">America</option>
+                    <option value="uk">London</option>
+                    <option value="rus">Russia</option>
+                </select>
+            </td>
+            <td>
+                <span>(***select country***)</span>
+            </td>
+        </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
